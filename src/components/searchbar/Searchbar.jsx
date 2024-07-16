@@ -1,25 +1,24 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import "./Searchbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons/faSearch";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
-const SearchBar = () => {
-    const [location, setLocation] = useState(null);
-    const inputRef = useRef(null);
+const SearchBar = ({ setLocation }) => {
+    const cityRef = useRef(null);
+    const countryRef = useRef(null);
 
     const handleSearch = () => {
-        console.log(inputRef.current.value);
+        const city = cityRef.current.value;
+        const country = 'Country';
+        setLocation({ city, country });
     };
 
     return (
         <div className="searchbar">
-            {/* <FontAwesomeIcon icon={faArrowUp} color="var(--background)"/>
-             */}
             <FontAwesomeIcon icon={faSearch} className="searchicon" />
-            <input ref={inputRef} className="textfield" />
+            <input ref={cityRef} className="textfield" placeholder="Enter city" />
             <button onClick={handleSearch} className="button">
-                <FontAwesomeIcon icon={faLocationDot} fontSize={'1.5rem'}/>
+                <FontAwesomeIcon icon={faLocationDot} fontSize={'1.5rem'} />
             </button>
         </div>
     );
