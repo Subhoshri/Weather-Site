@@ -23,3 +23,71 @@
     width: 100%;
     gap: 1rem;
 }
+
+
+@media screen and (min-width: 340px) {
+    .dashboard {
+      width: 440px;
+      height: 500px;
+    }
+
+    .dashboard .maincol .stats {
+        grid-template-columns: repeat(2,110px);
+        gap: 0.5rem;
+        padding-top: 8px;
+        align-items: right;
+    }
+
+    .maincol {
+      width: 80%;
+    }
+
+    .dashboard .sidecol{
+      width: 20px;
+      height: 670px;
+      padding-right: 60px;
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    .dashboard {
+      width: 480px;
+    }  
+
+    .dashboard .sidecol{
+      height: 670px;
+    }
+  }
+  
+
+@media screen and (min-width: 680px) {
+    .dashboard {
+      width: 580px;
+    }
+    .maincol {
+      width: 70%;
+    }
+  }
+  
+
+  @media screen and (min-width: 900px) {
+    .dashboard {
+      width: 800px;
+      height: 450px;
+    }
+
+    .dashboard .sidecol{
+      height: 250px;
+    }
+
+    .maincol {
+      width: 80%;
+    }
+
+    .dashboard .maincol .stats {
+      grid-template-columns: repeat(4,160px);
+      gap: 1rem;
+      padding-top: 10px;
+    }
+  }
+  
