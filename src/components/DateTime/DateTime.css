@@ -10,3 +10,39 @@
 .datetime .time {
     font-size: 1.3rem;
 }
+
+@media screen and (min-width:900px){
+    .datetime .time {
+        font-size: 1.3rem;
+    }
+
+    .datetime .dateText {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .datetime {
+     align-items: center;
+    }
+   }
+
+@media screen and (min-width: 340px){
+    .datetime .time {
+        font-size: 0.8rem;
+    }
+
+    .datetime .dateText {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .datetime .time {
+        font-size: 1rem;
+    }
+
+    .datetime .dateText {
+        font-size: 1rem;
+    }
+}
