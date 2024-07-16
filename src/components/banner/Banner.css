@@ -40,3 +40,85 @@
 .banner .image img {
     width: 14rem;
 }
+
+@media screen and (min-width: 910px) {
+    .banner .typography {
+      gap: 12px ;
+    }
+ 
+     .banner .image img {
+         width: 2rem;
+     }
+     .banner .typography .temperature {
+         font-size: 6rem;
+     }
+    }
+
+@media screen and (max-width: 900px) {
+   .banner .typography {
+     gap: 0px ;
+   }
+   .banner .typography .status {
+    font-size: 0.8rem;
+    }
+    .label{
+        font-size: 1rem ;
+    }
+
+    .banner .image img {
+        width: 9rem;
+    }
+    .banner .typography .temperature {
+        font-size: 4rem;
+    }
+    .status{
+        font-size: 1rem;
+    }
+   }
+
+   @media screen and (min-width: 680px) {
+   
+    .banner .typography .status {
+     font-size: 0.8rem;
+     }
+ 
+     .banner .image img {
+         width: 8.9rem;
+     }
+     .banner{
+      gap: 4rem;
+     }
+}
+  @media screen and (min-width: 576px) {
+   
+      .banner .typography .status {
+       font-size: 0.8rem;
+       }
+   
+       .banner .image img {
+           width: 8.9rem;
+       }
+       
+       .label{
+        font-size:0.9rem  ;
+       }
+       .banner{
+        gap: 4rem;
+       }
+  }
+
+
+  @media screen and (min-width: 340px) {
+   
+    .temperature{
+        font-size: 3.5rem ;
+    }
+     
+     .label{
+      font-size:0.8rem  ;
+     }
+    .banner{
+        padding-left: 20px;
+        padding-right: 3px ;
+    }
+}
