@@ -1,13 +1,13 @@
-import React from 'react'
-import "./Location.css"
+import React from 'react';
+import "./Location.css";
 
-const Location = () => {
+const Location = ({ city, country }) => {
   return (
     <div className="location">
-        <div className="exact">Los Angeles</div>
-        <div className="country">California</div>
+        <div className="exact">{city}</div>
+        <div className="country">{country}</div>
     </div>
-  )
-}
+  );
+};
 
-export default Location
+export default Location;
