@@ -1,11 +1,110 @@
-.location {
+.info-card {
     display: flex;
-    align-items: start;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 100%
+    background-color: hsla(0, 0%, 0%, 0.26);
+    width: 100%;
+    /* width: max-content; */
+    padding: 0.8rem;
+    gap: 0;
+    border-radius: 12px;
 }
 
-.location .exact {
-    font-size: 1.8rem;
+.info-card .icon {
+    font-size: 2.5rem;
+    line-height: 1px;
+    color: var(--light);
 }
+
+.info-card .value {
+    font-size: 2rem;
+    line-height: 1.2em;
+    font-weight: 500;
+}
+
+.info-card .field {
+    color: #ffffff8a;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.time-card {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 0.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    background-color: hsla(0, 0%, 100%, 15%);
+    width: max-content;
+}
+
+.time-card .field {
+    color: #ffffff8a;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.time-card .time {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.time-card .sun-icon {
+    height: 1.2em;
+    margin-right: 1rem;
+}
+
+
+  @media screen and (min-width: 340px) {
+    .time-card .time {
+        font-size: 1rem;
+    }
+    .time-card{
+        width: 110px;
+    }
+
+    .time-card .sun-icon {
+        height: 1.1em;
+        margin-right: 0.2rem;
+    }
+
+    .info-card .value {
+        font-size: 1.4rem;
+        line-height: 1.2em;
+        font-weight: 450;
+    }  
+  }
+
+  @media screen and (min-width: 576px) {
+    .time-card .time {
+        font-size: 1.2rem;
+    }
+    .time-card{
+        width: 120px;
+    }
+
+    .time-card .sun-icon {
+        height: 1.2em;
+        margin-right: 0.2rem;
+    }
+  }
+
+  @media screen and (min-width: 680px) {
+    .time-card .time {
+        font-size: 1.3rem;
+    }
+    .time-card{
+        width: 150px;
+    }
+
+    .time-card .sun-icon {
+        height: 1.2em;
+        margin-right: 0.9rem;
+    }
+  }
